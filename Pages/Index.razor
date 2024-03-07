@@ -1,9 +1,235 @@
 ﻿@page "/"
+@using OOAP1.Models;
+@using MudBlazor
+@inject ElectronicFactoryImplementation Creator;
+<PageTitle>Магазин электронники с фабрикой.</PageTitle>
+<style>
+    .mud-table-cell {
+        border: 1px solid black;
+    }
 
-<PageTitle>Index</PageTitle>
+    table {
+        width: 650px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-<h1>Hello, world!</h1>
+    td {
+        text-align: left;
+        padding: 10px;
+        border: 1px solid black;
+    }
 
-Welcome to your new app.
+    th {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+@if (electronics.Count > 0)
+{
+    <span style="font-size:larger">Полная номенклатура комплектующих.</span>
+    <MudTable Height="400px" Items="@electronics">
+        <HeaderContent>
+            <MudTh>Номер</MudTh>
+            <MudTh>Имя</MudTh>
+            <MudTh>Цена</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Nr">@context.Number</MudTd>
+            <MudTd DataLabel="Sign">@context.Name</MudTd>
+            <MudTd DataLabel="Name">@context.Price руб.</MudTd>
+        </RowTemplate>
+    </MudTable>
+}
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<div>
+    <span style="font-size:larger">Поиск товара по номеру</span>
+    <MudItem xs="12" sm="6" md="4">
+        <MudAutocomplete Clearable="true" T="ElectronicBase" Label="Введите номер" @bind-Value="test"
+                         SearchFunc="@Search" ToStringFunc="@(e=> e==null?null : $"{e.Number} ({e.Name})")" />
+    </MudItem>
+    <div style="margin-top:30px">
+        @if (test != null)
+        {
+            <span>Подробная информация: </span>
+            @if (test.Name.Contains("CPU"))
+            {
+
+                <table>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Имя</th>
+                        <th>Цена</th>
+                        <th>Тип сокета</th>
+                        <th>Кол-во ядер</th>
+                        <th>Частота</th>
+                        <th>Тех. процесс</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            @(
+                                ((CPU)test).Number
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((CPU)test).Name
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((CPU)test).Price
+                                ) Руб.
+                        </td>
+                        <td>
+                            @(
+                                ((CPU)test).SocketType
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((CPU)test).NumOfCores
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((CPU)test).ClockFrequency
+                                )GHz
+                        </td>
+                        <td>
+                            @(
+                                ((CPU)test).TechProcc
+                                )
+                        </td>
+                    </tr>
+                </table>
+            }
+            else if (test.Name.Contains("Motherboard"))
+            {
+                <table>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Имя</th>
+                        <th>Цена</th>
+                        <th>Тип сокета</th>
+                        <th>Кол-во процессоров</th>
+                        <th>Тип памяти</th>
+                        <th>Частота</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            @(
+                                ((Motherboard)test).Number
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((Motherboard)test).Name
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((Motherboard)test).Price
+                                ) Руб.
+                        </td>
+                        <td>
+                            @(
+                                ((Motherboard)test).SocketType
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((Motherboard)test).NumProcc
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((Motherboard)test).RamType
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((Motherboard)test).Frequency
+                                )GHz
+                        </td>
+                    </tr>
+                </table>
+            }
+            else if (test.Name.Contains("HDD"))
+            {
+                <table>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Имя</th>
+                        <th>Цена</th>
+                        <th>Объем</th>
+                        <th>Скорость вращения</th>
+                        <th>Тип интерфейса</th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            @(
+                                ((HDD)test).Number
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((HDD)test).Name
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((HDD)test).Price
+                                ) Руб.
+                        </td>
+                        <td>
+                            @(
+                                ((HDD)test).Capacity
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((HDD)test).Speed
+                                )
+                        </td>
+                        <td>
+                            @(
+                                ((HDD)test).InterfaceType
+                                )
+                        </td>
+                    </tr>
+                </table>
+            }
+
+        }
+    </div>
+</div>
+
+@code {
+    public List<ElectronicBase> electronics = new();
+    ElectronicBase test;
+    protected override void OnInitialized()
+    {
+        MakeElectronic();
+    }
+    public void MakeElectronic()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            electronics.Add(Creator.Create("CPU"));
+            electronics.Add(Creator.Create("Motherboard"));
+            electronics.Add(Creator.Create("HDD"));
+
+        }
+    }
+    private async Task<IEnumerable<ElectronicBase>> Search(string value)
+    {
+        if (string.IsNullOrEmpty(value))
+            return electronics.ToList();
+        return electronics.Where(x => x.Number.Contains(value, StringComparison.InvariantCultureIgnoreCase)).ToList();
+    }
+}
