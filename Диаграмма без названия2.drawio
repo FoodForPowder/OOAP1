@@ -1,63 +1,63 @@
-<mxfile host="app.diagrams.net" modified="2024-03-26T03:19:27.931Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" etag="Pt84W7rL3AWjQMc6rXzt" version="24.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-26T08:31:15.468Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 YaBrowser/24.1.0.0 Safari/537.36" etag="h-WKIAaVUpfYPZvNkKQO" version="24.1.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1975" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1803" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-0" value="&amp;lt;interface&amp;gt;&lt;div&gt;IElectronicOpt&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-0" value="&amp;lt;interface&amp;gt;&lt;div&gt;IElectronicOpt&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="280" y="190" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-3" value="+ OrderGood(): ElectronicBase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CT-KlL42sqq-8h2_6kL1-0">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-3" value="+ OrderGood(): ElectronicBase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="CT-KlL42sqq-8h2_6kL1-0" vertex="1">
           <mxGeometry y="50" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-4" value="&lt;div&gt;ElectronicOpt&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-4" value="&lt;div&gt;ElectronicOpt&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="140" y="340" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-5" value="+ OrderGood(): ElectronicBase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CT-KlL42sqq-8h2_6kL1-4">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-5" value="+ OrderGood(): ElectronicBase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="CT-KlL42sqq-8h2_6kL1-4" vertex="1">
           <mxGeometry y="50" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-6" value="&lt;div&gt;ELectronicOptProxy&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-6" value="&lt;div&gt;ELectronicOptProxy&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="520" y="335" width="190" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-7" value="&amp;nbsp;_role: String(readonly)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CT-KlL42sqq-8h2_6kL1-6">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-7" value="&amp;nbsp;_role: String(readonly)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="CT-KlL42sqq-8h2_6kL1-6" vertex="1">
           <mxGeometry y="30" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-16" value="+ OrderGood(): ElectronicBase" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="CT-KlL42sqq-8h2_6kL1-6">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-16" value="+ OrderGood(): ElectronicBase" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;strokeWidth=1;" parent="CT-KlL42sqq-8h2_6kL1-6" vertex="1">
           <mxGeometry y="60" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-8" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.408;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-4" target="CT-KlL42sqq-8h2_6kL1-3">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-8" value="" style="endArrow=block;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="330" y="330" as="sourcePoint" />
-            <mxPoint x="490" y="330" as="targetPoint" />
+            <mxPoint x="362" y="271" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-9" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.884;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-6" target="CT-KlL42sqq-8h2_6kL1-3">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-9" value="" style="endArrow=block;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.884;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;endFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-6" target="CT-KlL42sqq-8h2_6kL1-3" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="460" y="330" as="sourcePoint" />
             <mxPoint x="582" y="261" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-12" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-6" target="CT-KlL42sqq-8h2_6kL1-4">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-12" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-6" target="CT-KlL42sqq-8h2_6kL1-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="330" y="330" as="sourcePoint" />
             <mxPoint x="490" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-14" value="electronicOpt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CT-KlL42sqq-8h2_6kL1-12">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-14" value="electronicOpt" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CT-KlL42sqq-8h2_6kL1-12" vertex="1" connectable="0">
           <mxGeometry x="0.0122" y="-1" relative="1" as="geometry">
             <mxPoint x="-34" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-17" value="Client" style="html=1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-17" value="Client" style="html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="40" y="185" width="110" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-18" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-17" target="CT-KlL42sqq-8h2_6kL1-0">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-18" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="CT-KlL42sqq-8h2_6kL1-17" target="CT-KlL42sqq-8h2_6kL1-0" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="170" y="155" as="sourcePoint" />
             <mxPoint x="-10" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CT-KlL42sqq-8h2_6kL1-22" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(247, 247, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Паттерн Заместитель (Proxy) предоставляет объект-заместитель, который управляет доступом к другому объекту. То есть создается объект-суррогат, который может выступать в роли другого объекта и замещать его. В данном случаем реализована проверка роли клиента перед создание заказа.(Защищающий заместитель)&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="CT-KlL42sqq-8h2_6kL1-22" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(247, 247, 250); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Паттерн Заместитель (Proxy) предоставляет объект-заместитель, который управляет доступом к другому объекту. То есть создается объект-суррогат, который может выступать в роли другого объекта и замещать его. В данном случаем реализована проверка роли клиента перед создание заказа.(Защищающий заместитель)&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-31" y="510" width="890" height="100" as="geometry" />
         </mxCell>
       </root>
